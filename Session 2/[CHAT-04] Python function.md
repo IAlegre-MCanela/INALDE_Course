@@ -8,7 +8,9 @@ Apply the function to a few examples.
 
 ## Output (Gemini)
 
-```python
+```
+python
+
 def is_prime(n):
   """Checks if a given integer is prime.
 
