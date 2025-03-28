@@ -1,8 +1,8 @@
 # Session 3
 
-## Use cases
+### Use cases
 
-### SWOT analysis
+#### SWOT analysis
 
 ### Job description
 
