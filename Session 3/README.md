@@ -2,16 +2,16 @@
 
 ### Use cases
 
-#### SWOT analysis
+- SWOT analysis
 
 - Job description
 
-### Course syllabus
+- Course syllabus
 
-### Pitch email
+- Pitch email
 
-### Summary
+- Summary
 
-### FAQ list
+- FAQ list
 
-### PowerPoint slides
+- PowerPoint slides
