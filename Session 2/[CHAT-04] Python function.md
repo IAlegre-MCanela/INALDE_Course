@@ -10,6 +10,7 @@ Apply the function to a few examples.
 
 ```
 python
+
 def is_prime(n):
   """Checks if a given integer is prime.
 
