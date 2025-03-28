@@ -10,6 +10,7 @@ To copy all rows from `Sheet1` where column "A" contains the word "iphone" (case
 
 ```
 excel
+
 =FILTER(Sheet1!A:Z, REGEXMATCH(LOWER(Sheet1!A:A), "iphone"))
 ```
 
@@ -23,6 +24,7 @@ If you only need specific columns from `Sheet1` (for example, columns A and B), 
 
 ```
 excel
+
 =FILTER(Sheet1!A:B, REGEXMATCH(LOWER(Sheet1!A:A), "iphone"))
 ```
 
@@ -43,7 +45,9 @@ In Excel, you can't directly use a formula to "copy" rows as you can in Google S
 ### Method 1: Using `FILTER` (Excel 365 or Excel 2021)
 If you are using Excel 365 or Excel 2021, you can use the `FILTER` function to extract rows where column "A" contains the word "iphone":
 
-```excel
+```
+excel
+
 =FILTER(Sheet1!A:Z, ISNUMBER(SEARCH("iphone", Sheet1!A:A)))
 ```
 
@@ -59,7 +63,9 @@ If you're using an older version of Excel (Excel 2019 or earlier), you can use a
 1. Suppose your data is in columns A to Z on `Sheet1`, and you want to extract rows where column "A" contains the word "iphone".
 2. In the first row of your new sheet, enter the following formula:
 
-```excel
+```
+excel
+
 =IFERROR(INDEX(Sheet1!A$1:A$100, SMALL(IF(ISNUMBER(SEARCH("iphone", Sheet1!A$1:A$100)), ROW(Sheet1!A$1:A$100)-ROW(Sheet1!A$1)+1), ROW(1:1))), "")
 ```
 
