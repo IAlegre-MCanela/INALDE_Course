@@ -4,7 +4,7 @@
 
 #### SWOT analysis
 
-### Job description
+- Job description
 
 ### Course syllabus
 
