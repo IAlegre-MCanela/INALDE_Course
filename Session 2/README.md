@@ -1,3 +1,11 @@
 # Session 2
 
-### Large language models 
+### Large language models
+
+- Python function
+
+- Spreadsheet formula
+
+- SQL query
+
+- Data formats
