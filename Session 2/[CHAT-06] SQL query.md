@@ -8,8 +8,10 @@ SQL query for BigQuery that pulls from my ecommerce.products table and returns i
 
 To write a SQL query for BigQuery that pulls the specified fields (`id`, `cost`, `name`, `brand`, `retail_price`, and `sku`) from the `ecommerce.products` table and filters for products in the "Men" department and "Swim" category, you can use the following query:
 
+```
+sql
+
 SELECT 
-```sql
   id, 
   cost, 
   name, 
@@ -44,7 +46,9 @@ I need a SQL query for MySQL. My schema name is ecommerce and the tables are use
 
 Sure, here is the SQL query you requested:
 
-```sql
+```
+sql
+
 SELECT u.name, u.email, COUNT(o.id) AS total_orders, SUM(o.num_of_item) AS total_items
 FROM ecommerce.users u
 INNER JOIN ecommerce.orders o ON u.id = o.user_id
