@@ -4,8 +4,7 @@
 
 Convert from JSON to XML the following data.
 
-JSON:
-```json
+```
 [
     {
         "ratingValue": 4,
@@ -26,7 +25,9 @@ JSON:
 
 Here is the XML representation of the provided JSON data:
 
-```xml
+```
+xml
+
 <reviews>
     <review>
         <ratingValue>4</ratingValue>
