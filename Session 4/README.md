@@ -7,3 +7,5 @@
 - Routing customer queries
 
 - Product description from a fact sheet
+
+- Customized email
