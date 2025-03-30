@@ -5,3 +5,5 @@
 - Product review summary
 
 - Routing customer queries
+
+- Product description from a fact sheet
