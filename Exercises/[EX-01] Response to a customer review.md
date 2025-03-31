@@ -37,7 +37,7 @@ Some of these restaurants, *e.g*. Boquería Soho, respond to customer reviews wi
 
 ## Task
 
-The task is to engineer a prompt for a chat app (*e.g*. ChatGPT, Gemini, etc), that returns a response to a given review. The desired format for the output would be an enlarged JSON object with a new key "response", added to the three existing keys.
+The task is to engineer a prompt for a chat app (*e.g*. ChatGPT, Gemini, etc), that returns a response to a given review. The format for the output should allow to add the response to existing data on the review.
 
 You may consider the following issues:
 
