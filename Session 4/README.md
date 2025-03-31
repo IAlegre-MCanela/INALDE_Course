@@ -9,3 +9,5 @@
 - Product description from a fact sheet
 
 - Customized email
+
+- Customer feedback categorization
