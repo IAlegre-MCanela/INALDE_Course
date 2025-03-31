@@ -11,3 +11,5 @@
 - Customized email
 
 - Customer feedback categorization
+
+- Sentiment analysis
