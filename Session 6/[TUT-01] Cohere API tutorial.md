@@ -1,0 +1,292 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNgIvQKTl8RwOM+0JxtRZxf",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/MCanela-1954/Data/blob/main/%5BTUT_01%5D_Cohere_API_tutorial.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# [TUT-01] Cohere API tutorial"
+      ],
+      "metadata": {
+        "id": "YEQ2M7VtEuFQ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Setup"
+      ],
+      "metadata": {
+        "id": "X-dNcUMcE7mO"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip install cohere\n",
+        "import cohere"
+      ],
+      "metadata": {
+        "id": "wYsZ9X50ExAK"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from google.colab import userdata\n",
+        "client = cohere.ClientV2(api_key=userdata.get('COHERE_API_KEY'))"
+      ],
+      "metadata": {
+        "id": "5k10sAu-il4a"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "model_name = 'command-a-03-2025'"
+      ],
+      "metadata": {
+        "id": "YOtunJgRiqZS"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## First example"
+      ],
+      "metadata": {
+        "id": "lBW4gbKGwAVu"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "instruction = '''You are expected to perform a sentiment analysis of short messages. You have to label every text as either \"positive\", \"neutral\" or \"negative\", based on its emotional tone. Use JSON format, as in the collection of examples that follow.'''\n",
+        "examples = '''\n",
+        "<example>\n",
+        "Message: I'm so proud of you\n",
+        "{\"message\": I'm so proud of you\", \"label\": \"positive\"}\n",
+        "</example>\n",
+        "\n",
+        "<example>\n",
+        "Message: What a great time to be alive\n",
+        "{\"message\": \"What a great time to be alive\", \"label\": \"positive\"}\n",
+        "</example>\n",
+        "\n",
+        "<example>\n",
+        "Message: The service was amazing\n",
+        "{\"message\": \"The service was amazing\", \"label\": \"positive\"}\n",
+        "</example>\n",
+        "\n",
+        "<example>\n",
+        "Message: They don't care about me\n",
+        "{\"message\": \"They don't care about me\", \"label\": \"negative\"}\n",
+        "</example>\n",
+        "\n",
+        "<example>\n",
+        "Message: I hate this place\n",
+        "{\"message\": \"I hate this place\", \"label\": \"negative\"}\n",
+        "</example>\n",
+        "\n",
+        "<example>\n",
+        "Message: I am really frustrated\n",
+        "{\"message\": \"I am really frustrated\", \"label\": \"negative\"}\n",
+        "</example>\n",
+        "\n",
+        "<example>\n",
+        "Message: This made me think\n",
+        "{\"message\": \"This made me think\", \"label\": \"neutral\"}\n",
+        "</example>\n",
+        "\n",
+        "<example>\n",
+        "Message: The good old days\n",
+        "{\"message\": \"The good old days\", \"label\": \"neutral\"}\n",
+        "</example>\n",
+        "\n",
+        "<example>\n",
+        "Message: You can't ignore this\n",
+        "{\"message\": \"You can't ignore this\", \"label\": \"neutral\"}\n",
+        "</example>\n",
+        "'''"
+      ],
+      "metadata": {
+        "id": "XUveHev3xKd0"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "prompt = '''Message: I'm excited about the new course on AI'''"
+      ],
+      "metadata": {
+        "id": "ie5XiBEsj4l3"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "response = client.chat(\n",
+        "    messages=[{'role': 'system', 'content': instruction + examples}, {'role': 'user', 'content': prompt}],\n",
+        "    model=model_name)"
+      ],
+      "metadata": {
+        "id": "ZOuamZkDj-5x"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(response.message.content[0].text)"
+      ],
+      "metadata": {
+        "id": "EjI9yzkXj0bs"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Second example"
+      ],
+      "metadata": {
+        "id": "wxGOeoNatepz"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "instruction = '''\n",
+        "You are a restaurant manager taking care of analyzing and responding the reviews posted by customers on the Yelp's website.\n",
+        "The queries are presented to you as JSON objects with three keys: \"author\", \"rating\" and \"review\".\n",
+        "You are expected to create a new JSON object containing the \"author\" key and four additional keys:\n",
+        "- \"price\": The value for this key must be a summary, of no more than 10 words, of what is said in the review about the value-for-money of a lunch or a dinner in this restaurant. If nothing is said in the review about that, the value must be null.\n",
+        "- \"service\": The value for this key must be a summary, of no more than 10 words, of what is said in the review about the reception, waiters, accomodation and other service aspects in this restaurant. If nothing is said in the review about that, the value must be null.\n",
+        "- \"atmosphere\": The value for this key must be a summary, of no more than 10 words, of what is said in the review about how friendly is this restaurant or how comfortable the customers feel themselves. If nothing is said in the review about theat, the value must be null.\n",
+        "- \"food\": The value for this key must be a summary, of no more than 10 words, of what is said in the review about how the food in general or about specific dishes. If nothing is said in the review about theat, the value must be null.\n",
+        "'''"
+      ],
+      "metadata": {
+        "id": "8aWt9B8VthQB"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "prompt = '''\n",
+        "{\n",
+        "\t\"author\": \"Aldo P.\",\n",
+        "\t\"rating\": 5,\n",
+        "\t\"review\": \"Boqueria Soho has such a great vibe, perfect for a night out with friends. The service was impressive: we were in a rush and let them know, and they went above and beyond to accommodate us. We opted for the tasting menu with Iberico ham, which was USD 65, and honestly, it was one of the best value-for-money meals I've had in NYC. The Vieux Carré cocktail I ordered was perfectly balanced, especially for anyone who's into bourbon.\n",
+        "\tHighly recommend this spot; we left happy, full, and totally satisfied with the food, service, and atmosphere.\"\n",
+        "}\n",
+        "'''"
+      ],
+      "metadata": {
+        "id": "B8haZnJjmDpf"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "response = client.chat(\n",
+        "    messages=[{'role': 'system', 'content': instruction}, {'role': 'user', 'content': prompt}],\n",
+        "    model=model_name)\n",
+        "print(response.message.content[0].text)"
+      ],
+      "metadata": {
+        "id": "hI3WFz75mHY1"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "prompt = '''\n",
+        "{\n",
+        "\t\"author\": \"Anna H.\",\n",
+        "\t\"rating\": 4,\n",
+        "\t\"review\": \"Boqueria is located in the heart of Soho and conveniently within walking distance from the Spring St subway station. After window shopping, my family and I decided to try Boqueria. The hostess asked for my number and entered it into their system before seating us at a booth table. The ambiance was perfect for our lunch date. I informed our server about my food allergies.\n",
+        "\tTapas *sharing is caring*\n",
+        "\tBoquerones con Naranja\n",
+        "\tTortilla Española\n",
+        "\tMejillones con Azafrán: The steamed mussels were flavorful. Sadly, I ate all the bread and wished for more to dip into the delicious sherry and saffron sauce.\n",
+        "\tHalf Pollo Rustido: The Catalan-style roasted chicken was finger-licking goodness.\n",
+        "\tBookmark this spot to try!\"\n",
+        "}\n",
+        "'''\n",
+        "response = client.chat(\n",
+        "    messages=[{'role': 'system', 'content': instruction}, {'role': 'user', 'content': prompt}],\n",
+        "    model=model_name)\n",
+        "print(response.message.content[0].text)"
+      ],
+      "metadata": {
+        "id": "JUHhxAJhtq-2"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "prompt = '''\n",
+        "{\n",
+        "\t\"author\": \"Sy Y.\",\n",
+        "\t\"rating\": 3,\n",
+        "\t\"review\": \"Stopped in to Boqueria Soho location on Spring street for Happy Hour. Happy hour seems to get quite full here. This was not the first visit we did a 'walk in' but, this was the first time we were asked if we had an appointment for happy hour. Either way, we sat down with 'limited time' (walked in around 4:05PM and the hostess told us that we can have the table until no later than 5:15PM). We rushed to order, received the food and had to get out of there with no time to breathe (with a little exaggeration =/). Food, Lamb skewers were nicely cooked with good flavors. Mushroom croquet had a crispy exterior and soft inside. Mini sliders were delicious. Chorizo was pretty standard. The noodle paella with squid ink was a good concept and interesting. I did enjoy the flavor but the broken noodles under the squid was quite soggy. We really tried to like the dish but, hopefully, next time. If opportunity arises, I will try this place again.\"\n",
+        "}\n",
+        "'''\n",
+        "response = client.chat(\n",
+        "    messages=[{'role': 'system', 'content': instruction}, {'role': 'user', 'content': prompt}],\n",
+        "    model=model_name)\n",
+        "print(response.message.content[0].text)"
+      ],
+      "metadata": {
+        "id": "k3JIOF2OuF2F"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
