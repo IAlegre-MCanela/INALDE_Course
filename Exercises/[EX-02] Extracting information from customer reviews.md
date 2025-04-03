@@ -33,5 +33,5 @@ Review of restaurants are posted in the Yelp’s website, `https://www.yelp.com`
 
 ## Task
 
-The task is to engineer a prompt for a chat app (*e.g*. ChatGPT, Gemini, etc), that extracts short comments on various aspects of the customer's experience. The desired format for the output would be a JSON object containing the "author" key and some additional keys, such as "price", "food", "atmosphere", "service" or "dishes_mentioned". This can be a one-shot prompt, providing a short explanation of the value expected for every key.
+The task is to engineer a prompt for a chat app (*e.g*. ChatGPT, Gemini, etc), that extracts short comments on various aspects of the customer's experience. The desired format for the output would be a JSON object containing the "author" key and some additional keys, such as "price", "food", "atmosphere", "service" or "dishes_mentioned". This can be a one-shot prompt, with an example, or you may consider to provide a short explanation of the value expected for every key (or both things).
 
