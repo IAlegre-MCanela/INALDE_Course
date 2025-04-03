@@ -1,6 +1,6 @@
 # GenAI Course
 
-### INALDE 2025, May 7-8
+### INALDE 2025, May 8-9
 
 1. Introduction to GenAI.
 
