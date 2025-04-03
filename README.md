@@ -2,18 +2,18 @@
 
 ### INALDE 2025, May 8-9
 
-1. Introduction to GenAI.
+- Session 1: Introduction to GenAI
 
-2. Large language models.
+- Session 2: Large language models
 
-3. Use cases.
+- Session 3: Use cases
 
-4. Prompt engineering.
+- Session 4: Prompt engineering
 
-5. Chain-of-Thought.
+- Session 5: Chain-of-Thought
 
-6. Application programming interfaces.
+- Session 6: Application programming interfaces
 
-7. The small models.
+- Session 7: The small models
 
-8. Ethical issues.
+- Session 8: Ethical issues
