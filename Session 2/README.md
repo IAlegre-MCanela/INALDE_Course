@@ -6,6 +6,8 @@
 
 - Python function
 
+- Java function
+
 - Spreadsheet formula
 
 - SQL query
