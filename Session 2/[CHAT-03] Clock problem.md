@@ -31,9 +31,7 @@ Let the time when Jimmy started painting be $9:00 + x$ minutes, where $x$ is the
 
 - At this time:
   - The **minute hand** is at $ x $ minutes past the hour, so its position in degrees is:
-    $$
-    6x \quad \text{(since each minute corresponds to 6 degrees)}.
-    $$
+    $$6x \quad \text{(since each minute corresponds to 6 degrees)}.$$
   - The **hour hand** is at $ 9 $ hours plus $ x $ minutes. Its position in degrees is:
     $$
     270 + \frac{x}{2} \quad \text{(since the hour hand moves 0.5 degrees per minute)}.
