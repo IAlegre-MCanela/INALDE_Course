@@ -1,4 +1,4 @@
-# [CHAT-06] SQL queries
+# [CHAT-07] SQL queries
 
 ## Input
 
