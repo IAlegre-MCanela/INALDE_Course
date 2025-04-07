@@ -42,7 +42,7 @@ Let the time when Jimmy finished painting be $10:00 + y$ minutes, where $y$ is t
 
   - The **hour hand** is at $10$ hours plus $y$ minutes. Its position in degrees is $300 + \frac{y}{2}$.
 
-### Step 2: Equate positions of the hands
+#### Step 2: Equate positions of the hands
 According to the problem, at the time Jimmy finished painting:
 1. The hour hand is where the minute hand was when he started.
 2. The minute hand is where the hour hand was when he started.
@@ -51,7 +51,7 @@ From these conditions:
 1. $300 + \frac{y}{2} = 6x$.
 2. $6y = 270 + \frac{x}{2}$.
 
-### Step 3: Solve the equations
+#### Step 3: Solve the equations
 
 From the first equation: $300 + \frac{y}{2} = 6x$.
 
@@ -81,7 +81,7 @@ $$143x = 7740.$$
 
 $$x = \frac{7740}{143} \approx 54.13 \quad \text{minutes}.$$
 
-### Step 4: Calculate $t$
+#### Step 4: Calculate $t$
 The time $t$ Jimmy spent painting is the difference between the start and end times:
 
 $$t = x + y.$$
