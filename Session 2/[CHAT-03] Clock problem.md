@@ -98,11 +98,11 @@ $$t = 13(54.13) - 600.$$
 
 $$t \approx 703.69 - 600.$$
 
-$$t \approx 103.69 \, \text{minutes}.$$
+$$t \approx 103.69 \quad \text{minutes}.$$
 
 Convert to hours:
 
-$$t \approx \frac{103.69}{60} \approx 1.73 \, \text{hours}.$$
+$$t \approx \frac{103.69}{60} \approx 1.73 \quad \text{hours}.$$
 
 ### Final Answer:
 
