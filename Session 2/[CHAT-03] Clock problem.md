@@ -33,14 +33,14 @@ Let the time when Jimmy started painting be $9:00 + x$ minutes, where $x$ is the
  
   - The **minute hand** is at $x$ minutes past the hour, so its position in degrees is $6x$ (since each minute corresponds to 6 degrees).
     
-  - The **hour hand** is at $9$ hours plus $x$ minutes. Its position in degrees is $270 + x/2$ (since the hour hand moves 0.5 degrees per minute).
+  - The **hour hand** is at $9$ hours plus $x$ minutes. Its position in degrees is $270 + \frac{x}{2}$ (since the hour hand moves 0.5 degrees per minute).
 
 Let the time when Jimmy finished painting be $10:00 + y$ minutes, where $y$ is the number of minutes past 10:00.
 
 - At this time:
   - The **minute hand** is at $y$ minutes past the hour, so its position in degrees is $6y$.
 
-  - The **hour hand** is at $10$ hours plus $y$ minutes. Its position in degrees is $300 + y/2$.
+  - The **hour hand** is at $10$ hours plus $y$ minutes. Its position in degrees is $300 + \frac{y}{2}$.
 
 ### Step 2: Equate positions of the hands
 According to the problem, at the time Jimmy finished painting:
@@ -53,17 +53,11 @@ From these conditions:
 
 ### Step 3: Solve the equations
 
-From the first equation:
-$$
-300 + \frac{y}{2} = 6x.
-$$
+From the first equation: $300 + \frac{y}{2} = 6x$.
+
 Multiply through by 2 to eliminate the fraction:
-$$
-600 + y = 12x.
-$$
-$$
-y = 12x - 600. \tag{1}
-$$
+$$600 + y = 12x.$$
+$$y = 12x - 600. \tag{1}$$
 
 From the second equation:
 $$
