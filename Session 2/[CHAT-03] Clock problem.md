@@ -59,60 +59,51 @@ Multiply through by 2 to eliminate the fraction:
 
 $$600 + y = 12x.$$
 
-$$y = 12x - 600. \tag{1}$$
+$$y = 12x - 600. \qquad (1)$$
 
 From the second equation:
-$$
-6y = 270 + \frac{x}{2}.
-$$
-Multiply through by 2 to eliminate the fraction:
-$$
-12y = 540 + x.
-$$
-Substitute $ y $ from Equation (1):
-$$
-12(12x - 600) = 540 + x.
-$$
-$$
-144x - 7200 = 540 + x.
-$$
-Simplify:
-$$
-143x = 7740.
-$$
-$$
-x = \frac{7740}{143} \approx 54.13 \, \text{minutes}.
-$$
 
-### Step 4: Calculate $ t $
-The time $ t $ Jimmy spent painting is the difference between the start and end times:
-$$
-t = x + y.
-$$
-Substitute $ y = 12x - 600 $:
-$$
-t = x + (12x - 600).
-$$
-$$
-t = 13x - 600.
-$$
-Substitute $ x \approx 54.13 $:
-$$
-t = 13(54.13) - 600.
-$$
-$$
-t \approx 703.69 - 600.
-$$
-$$
-t \approx 103.69 \, \text{minutes}.
-$$
+$$6y = 270 + \frac{x}{2}.$$
+
+Multiply through by 2 to eliminate the fraction:
+
+$$12y = 540 + x.$$
+
+Substitute $y$ from Equation (1):
+
+$$12(12x - 600) = 540 + x.$$
+
+$$144x - 7200 = 540 + x.$$
+
+Simplify:
+
+$$143x = 7740.$$
+
+$$x = \frac{7740}{143} \approx 54.13 \, \text{minutes}.$$
+
+### Step 4: Calculate $t$
+The time $t$ Jimmy spent painting is the difference between the start and end times:
+
+$$t = x + y.$$
+
+Substitute $y = 12x - 600$:
+
+$$t = x + (12x - 600).$$
+
+$$t = 13x - 600.$$
+
+Substitute $x \approx 54.13$:
+
+$$t = 13(54.13) - 600.$$
+
+$$t \approx 703.69 - 600.$$
+
+$$t \approx 103.69 \, \text{minutes}.$$
 
 Convert to hours:
-$$
-t \approx \frac{103.69}{60} \approx 1.73 \, \text{hours}.
-$$
+
+$$t \approx \frac{103.69}{60} \approx 1.73 \, \text{hours}.$$
 
 ### Final Answer:
-$$
-\boxed{t \approx 1.73 \, \text{hours}}
-$$
+
+$$\boxed{t \approx 1.73 \, \text{hours}}$$
