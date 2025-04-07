@@ -106,4 +106,4 @@ $$t \approx \frac{103.69}{60} \approx 1.73 \, \text{hours}.$$
 
 ### Final Answer:
 
-$$\boxed{t \approx 1.73 \, \text{hours}}$$
+$$\boxed{t \approx 1.73 \quad \text{hours}}$$
