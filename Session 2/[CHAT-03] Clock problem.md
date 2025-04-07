@@ -48,8 +48,8 @@ According to the problem, at the time Jimmy finished painting:
 2. The minute hand is where the hour hand was when he started.
 
 From these conditions:
-1. $ 300 + \frac{y}{2} = 6x $.
-2. $ 6y = 270 + \frac{x}{2} $.
+1. $300 + \frac{y}{2} = 6x$.
+2. $6y = 270 + \frac{x}{2}$.
 
 ### Step 3: Solve the equations
 
