@@ -56,7 +56,9 @@ From these conditions:
 From the first equation: $300 + \frac{y}{2} = 6x$.
 
 Multiply through by 2 to eliminate the fraction:
+
 $$600 + y = 12x.$$
+
 $$y = 12x - 600. \tag{1}$$
 
 From the second equation:
