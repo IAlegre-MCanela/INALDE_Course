@@ -79,7 +79,7 @@ Simplify:
 
 $$143x = 7740.$$
 
-$$x = \frac{7740}{143} \approx 54.13 \, \text{minutes}.$$
+$$x = \frac{7740}{143} \approx 54.13 \quad \text{minutes}.$$
 
 ### Step 4: Calculate $t$
 The time $t$ Jimmy spent painting is the difference between the start and end times:
