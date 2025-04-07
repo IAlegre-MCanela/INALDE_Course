@@ -26,7 +26,7 @@ Therefore, t = 11/12.
 
 This is a classic clock problem where the hour and minute hands switch positions after a period of time. Let's determine the value of $t$, the time Jimmy spent painting.
 
-### Step 1: Represent the hands of the clock mathematically
+#### Step 1: Represent the hands of the clock mathematically
 Let the time when Jimmy started painting be $9:00 + x$ minutes, where $x$ is the number of minutes past 9:00.
 
 - At this time:
