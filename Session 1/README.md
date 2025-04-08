@@ -3,3 +3,5 @@
 ### AI vs GenAI
 
 - Who is IA?
+
+- Math word problem
