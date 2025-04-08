@@ -3,3 +3,5 @@
 ### Chain-of-Thought
 
 - Responding customer queries
+
+- Prompt chaining
