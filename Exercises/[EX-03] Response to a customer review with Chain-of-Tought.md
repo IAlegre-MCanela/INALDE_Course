@@ -1,4 +1,4 @@
-# [EX-03] Responding to customer reviews with Chain-of-Tought
+# [EX-03] Response to a customer review with Chain-of-Tought
 
 
 ## Introduction
