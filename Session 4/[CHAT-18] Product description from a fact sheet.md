@@ -60,6 +60,8 @@ Your task is to display the information contained in the following fact sheet in
 
 Here's the information from the fact sheet displayed in a Markdown table:
 
+```
+Markdown
 
 | Feature | Description |
 |---|---|
@@ -74,5 +76,6 @@ Here's the information from the fact sheet displayed in a Markdown table:
 | Wi-Fi Connectivity | Supports 2.4 GHz and 5.0 GHz networks with support for WEP, WPA, WPA2, WPA3 and OWE security using password authentication or Wi-Fi Protected Setup (WPS). Does not support connecting to ad-hoc (or peer-to-peer) Wi-Fi networks. |
 | Accessibility Features | VoiceView screen reader, available over Bluetooth audio, provides spoken feedback allowing you to navigate your device and read books with text-to-speech (available in English only). Kindle Paperwhite also includes the ability to have dark mode, adjust font size, font face, line spacing, and margins. Learn more about Accessibility for Kindle. |
 | Content Formats Supported | Kindle Format 8 (AZW3), Kindle (AZW), TXT, PDF, unprotected MOBI, PRC natively; PDF, DOCX, DOC, HTML, EPUB, TXT, RTF, JPEG, GIF, PNG, BMP through conversion; Audible audio format (AAX). Learn more about supported file types for personal documents. |
+```
 
 This Markdown table will render neatly in many platforms, such as GitHub, GitLab, and various markdown editors.
