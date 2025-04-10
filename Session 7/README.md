@@ -2,6 +2,6 @@
 
 ### The small models
 
-- [TUT-02] Groq API tutorial
+- Groq API tutorial
 
-
+Location: https://github.com/MCanela-1954/Data/blob/main/%5BTUT-02%5D%20Groq%20API%20tutorial.ipynb
