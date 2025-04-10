@@ -2,16 +2,6 @@
 
 ### Application programming interfaces
 
-- Application programming interface (APIs)
+- Gemini API tutorial
 
-- Signing up
-
-- Technicalities
-
-- The OpenAI API
-
-- The Gemini API
-
-- The Cohere API
-
-- The Groq API
+Location: https://github.com/MCanela-1954/Data/blob/main/%5BTUT-02%5D%20Gemini%20API%20tutorial.ipynb
