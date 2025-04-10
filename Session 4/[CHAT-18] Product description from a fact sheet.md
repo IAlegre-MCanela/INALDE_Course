@@ -39,8 +39,8 @@ This description highlights key features like the high-resolution display, long 
 Your task is to display the information contained in the following fact sheet in a Markdown table.
 
 <fact_sheet>
-```
-{
+
+    {
     "Display": "Amazon's 7-inch Paperwhite display technology with built-in front light, 300 ppi, optimized font technology, 16-level gray scale.",
     "Size": "127.5 x 176.7 x 7.8 mm",
     "Weight": "211 g. Actual size and weight may vary by configuration and manufacturing process.",
@@ -53,7 +53,7 @@ Your task is to display the information contained in the following fact sheet in
     "Accessibility Features": "VoiceView screen reader, available over Bluetooth audio, provides spoken feedback allowing you to navigate your device and read books with text-to-speech (available in English only). Kindle Paperwhite also includes the ability to have dark mode, adjust font size, font face, line spacing, and margins. Learn more about Accessibility for Kindle.",
     "Content Formats Supported": "Kindle Format 8 (AZW3), Kindle (AZW), TXT, PDF, unprotected MOBI, PRC natively; PDF, DOCX, DOC, HTML, EPUB, TXT, RTF, JPEG, GIF, PNG, BMP through conversion; Audible audio format (AAX). Learn more about supported file types for personal documents."
 }
-```
+
 </fact_sheet>
 
 ## Output (Gemini)
