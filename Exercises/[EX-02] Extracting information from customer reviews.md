@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Review of restaurants are posted in the Yelp’s website, `https://www.yelp.com`. The following three examples, formatted as JSON objects, have been extracted from the Yelp page of a popular catalan restaurant in New York City, `https://www.yelp.com/biz/boqueria-soho-new-york-2`.
+Reviews of restaurants are posted in the Yelp’s website, `https://www.yelp.com`. The following three examples, formatted as JSON objects, have been extracted from the Yelp page of a popular catalan restaurant in New York City, `https://www.yelp.com/biz/boqueria-soho-new-york-2`.
 
 ```
 {
