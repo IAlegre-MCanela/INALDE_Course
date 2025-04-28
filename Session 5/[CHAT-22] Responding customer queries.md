@@ -144,9 +144,11 @@ I hope this helps! Let me know if you have any other questions.
 
 ## Input
 
+```
 <query>
 Do you sell TVs?
 </query>
+```
 
 ## Output (Gemini)
 
