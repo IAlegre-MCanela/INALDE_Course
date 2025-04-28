@@ -128,7 +128,7 @@ By how much is the BlueWave Chromebook more expensive than the TechPro Desktop?
 
 ## Output (Gemini)
 
-#### Step 1: The user is asking about specific products (BlueWave Chromebook and TechPro Desktop).
+`####` Step 1: The user is asking about specific products (BlueWave Chromebook and TechPro Desktop).
 
 #### Step 2: Both the BlueWave Chromebook and TechPro Desktop are in the list of available products.
 
