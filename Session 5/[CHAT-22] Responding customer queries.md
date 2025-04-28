@@ -100,11 +100,11 @@ All available products:
 
 	 + Price: $249.99
 
-Step 3: #### If the message contains products in the list above, list any assumptions that the user is making in their message e.g. that Laptop X is bigger than Laptop Y, or that Laptop Z has a 2 year warranty.
+Step 3: #### If the query refers to products in the list above, list any assumptions that the user is making, e.g. that Laptop X is bigger than Laptop Y, or that Laptop Z has a 2 year warranty.
 
-Step 4: #### If the user made any assumptions, figure out whether those assumptions are true based on your product information.
+Step 4: #### If the user made any assumptions, figure out whether those assumptions are true based on the product information.
 
-Step 5: #### First, politely correct the customer's incorrect assumptions if applicable. Only mention or reference products in the list of 5 available products, as these are the only 5 products that the store sells. Use a friendly tone.
+Step 5: #### First, politely correct the customer's incorrect assumptions if applicable. Only mention or reference products in the product list, as these are the only products that the store sells. Use a friendly tone.
 
 Use the following format:
 
@@ -130,13 +130,13 @@ By how much is the BlueWave Chromebook more expensive than the TechPro Desktop?
 
 `####` Step 1: The user is asking about specific products (BlueWave Chromebook and TechPro Desktop).
 
-#### Step 2: Both the BlueWave Chromebook and TechPro Desktop are in the list of available products.
+`####` Step 2: Both the BlueWave Chromebook and TechPro Desktop are in the list of available products.
 
-#### Step 3: The user is assuming that the BlueWave Chromebook is more expensive than the TechPro Desktop.
+`####` Step 3: The user is assuming that the BlueWave Chromebook is more expensive than the TechPro Desktop.
 
-#### Step 4: The assumption is incorrect. The TechPro Desktop is priced at $999.99, while the BlueWave Chromebook is priced at $249.99. 
+`####` Step 4: The assumption is incorrect. The TechPro Desktop is priced at $999.99, while the BlueWave Chromebook is priced at $249.99. 
 
-Response to user: #### Hi there! It seems you might be mistaken about the pricing. The TechPro Desktop is actually more expensive than the BlueWave Chromebook. The TechPro Desktop costs $999.99, and the BlueWave Chromebook costs $249.99. 
+Response to user: `####` Hi there! It seems you might be mistaken about the pricing. The TechPro Desktop is actually more expensive than the BlueWave Chromebook. The TechPro Desktop costs $999.99, and the BlueWave Chromebook costs $249.99. 
 
 I hope this helps! Let me know if you have any other questions.
 
@@ -150,14 +150,14 @@ Do you sell TVs?
 
 ## Output (Gemini)
 
-#### Step 1: The user is not asking about a specific product.
+`####` Step 1: The user is not asking about a specific product.
 
-#### Step 2: Not applicable.
+`####` Step 2: Not applicable.
 
-#### Step 3: Not applicable.
+`####` Step 3: Not applicable.
 
-#### Step 4: Not applicable.
+`####` Step 4: Not applicable.
 
-Response to user: #### Hi there! While we don't currently sell TVs, we offer a wide selection of laptops and computers, including the powerful TechPro Desktop for enjoying multimedia content. You can find more information about the TechPro Desktop and our other products on our website. 
+Response to user: `####` Hi there! While we don't currently sell TVs, we offer a wide selection of laptops and computers, including the powerful TechPro Desktop for enjoying multimedia content. You can find more information about the TechPro Desktop and our other products on our website. 
 
 I hope this helps!
